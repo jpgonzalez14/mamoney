@@ -7,6 +7,13 @@
 </ion-header>
 
 <ion-content>
+  <form (ngSubmit)="addSaving(f.value)" #f="ngForm">
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-textarea name="title" ngModel></ion-textarea>
+    </ion-item>
+  </form>
+  <button ion-button type="submit">Guardar Ahorro</button>
   <ion-list>
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
