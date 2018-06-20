@@ -16,5 +16,10 @@
   <button ion-button style="background-color:#5862D6" block>Ahorro</button>
 
 
+  <ion-list>
+    <button ion-item *ngFor="let saving of savings">
+      {{ saving.title }}
+    </button>
+  </ion-list>
 
 </ion-content>

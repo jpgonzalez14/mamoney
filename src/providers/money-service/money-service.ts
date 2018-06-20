@@ -14,9 +14,10 @@ export class MoneyServiceProvider {
   private savings: {title: string}[]=[];
 //public http: HttpClient
   constructor() {
-    console.log('Hello MoneyServiceProvider Provider');
   }
+  
   addSaving(saving:{title: string}){
+    console.log('entro provider');
     this.savings.push(saving);
   }
 
