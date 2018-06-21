@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MoneyServiceProvider } from '../providers/money-service/money-service';
 import { IonicStorageModule } from'@ionic/storage';
+import { FormsModule, ReactiveFormsModule } from'@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { IonicStorageModule } from'@ionic/storage';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
