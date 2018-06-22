@@ -13,6 +13,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MoneyServiceProvider } from '../providers/money-service/money-service';
 import { IonicStorageModule } from'@ionic/storage';
 import { FormsModule, ReactiveFormsModule } from'@angular/forms';
+import { MyinfoProvider } from '../providers/myinfo/myinfo';
+import { SpendsProvider } from '../providers/spends/spends';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { FormsModule, ReactiveFormsModule } from'@angular/forms';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MoneyServiceProvider
+    MoneyServiceProvider,
+    MyinfoProvider,
+    SpendsProvider
   ]
 })
 export class AppModule {}
